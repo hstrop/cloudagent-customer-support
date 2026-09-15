@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CloudAgent · 客服工作台</title>
+    <link rel="stylesheet" href="/assets/app.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar"><a class="brand" href="/"><span class="mark">C</span><span><b>CloudAgent</b><small>SUPPORT OPERATIONS</small></span></a><span class="status"><i></i>离线可验证</span></header>
+      <section class="hero"><p class="eyebrow">EVIDENCE-FIRST CUSTOMER SUPPORT</p><h1>让每一次回答，<em>都有依据。</em></h1><p>从意图识别到知识检索、策略拦截和人工接管，CloudAgent 把客服 Agent 的关键链路变成可观察的工作台。</p></section>
+      <section class="grid">
+        <aside class="panel side"><div class="panel-head"><span>工作流</span><b>4 STEPS</b></div><div class="steps"><div><strong>01</strong><span>识别意图<small>intent classification</small></span></div><div><strong>02</strong><span>检索证据<small>knowledge retrieval</small></span></div><div><strong>03</strong><span>安全策略<small>policy gate</small></span></div><div><strong>04</strong><span>回答 / 转人工<small>handoff decision</small></span></div></div><div class="note"><b>安全边界</b><p>不会索要密码、验证码或完整支付信息。每个回答都会返回证据与决策轨迹。</p></div></aside>
+        <section class="panel chat"><div class="panel-head"><span>客服对话</span><code id="session">demo-session</code><button id="new-session" type="button">新会话</button></div><div id="messages" class="messages"><div class="welcome"><b>你好，我是 CloudAgent。</b><span>试试：我的退款多久到账？</span><span>或：物流一直没有更新怎么办？</span></div></div><div id="thinking" class="thinking" hidden>Agent 正在检索并检查策略…</div><form id="chat-form"><textarea id="message" rows="1" placeholder="描述你的问题，例如：退款多久到账？"></textarea><button aria-label="发送">↗</button></form><small class="foot">Enter 发送 · Shift + Enter 换行 · offline demo</small></section>
+        <aside class="panel side evidence"><div class="panel-head"><span>证据与决策</span><b id="evidence-count">0 ITEMS</b></div><div id="evidence"><p class="empty">发送问题后，这里会显示命中的知识片段、分数和转人工原因。</p></div></aside>
+      </section>
+      <footer><span>CloudAgent / FastAPI + Policy-aware workflow</span><span>Prototype · no live customer data</span></footer>
+    </main>
+    <script src="/assets/app.js" defer></script>
+  </body>
+</html>
