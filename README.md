@@ -38,3 +38,12 @@ python -m pytest -q
 ```
 
 The suite covers grounded answers, policy blocking, unknown-intent handoff, session reset, API validation, and health behavior.
+
+## Container deployment
+
+```powershell
+docker build -t cloudagent-customer-support .
+docker run --rm -p 8020:8020 cloudagent-customer-support
+```
+
+Open `http://127.0.0.1:8020/`. The image contains only the deterministic offline fixture and no customer data.
