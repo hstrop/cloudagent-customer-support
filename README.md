@@ -1,5 +1,7 @@
 # CloudAgent Customer Support
 
+[![CI](https://github.com/hstrop/cloudagent-customer-support/actions/workflows/ci.yml/badge.svg)](https://github.com/hstrop/cloudagent-customer-support/actions/workflows/ci.yml)
+
 CloudAgent is an offline-first customer support assistant prototype. It turns the core customer-service workflow into an observable backend: intent classification → knowledge retrieval → policy gate → grounded reply or human handoff.
 
 ## Global AI/LLM Internship Portfolio
